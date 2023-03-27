@@ -1,0 +1,22 @@
+{
+  "name": "chatgpt-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "start": "nodemon src/index.ts",
+    "build": "tsc"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^18.15.10",
+    "dotenv": "^16.0.3",
+    "hygen": "^6.2.11",
+    "nodemon": "^2.0.22",
+    "openai": "^3.2.1",
+    "telegraf": "^4.12.2",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.2"
+  }
+}
