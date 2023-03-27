@@ -1,6 +1,5 @@
 import { Scenes } from "telegraf";
 import { CustomContext } from "../types/context";
-import { openai } from "../common/openai";
 import { OpenAIApi, Configuration } from "openai";
 
 export const makeRequest = new Scenes.BaseScene<CustomContext>("makeRequest")
@@ -20,7 +19,7 @@ export const makeRequest = new Scenes.BaseScene<CustomContext>("makeRequest")
 			const completion = await openai.createCompletion({
 				model: "text-davinci-003",
 				prompt: ctx.message.text,
-				max_tokens: 4000,
+				max_tokens: 10000,
 			});
 
 			const answer =
