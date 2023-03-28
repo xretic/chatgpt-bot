@@ -19,7 +19,7 @@ export const makeRequest = new Scenes.BaseScene<CustomContext>("makeRequest")
 			const completion = await openai.createCompletion({
 				model: "text-davinci-003",
 				prompt: ctx.message.text,
-				max_tokens: 10000,
+				max_tokens: 2048,
 			});
 
 			const answer =
