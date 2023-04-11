@@ -3,8 +3,6 @@ import { CustomContext } from "../types/context";
 import scenes from "../scenes/index";
 import commandParser from "../utils/commandParser";
 
-require("dotenv").config();
-
 export const telegramClient = new Telegraf<CustomContext>(
 	process.env.TELEGRAM_TOKEN ?? ""
 );
